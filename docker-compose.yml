@@ -1,0 +1,11 @@
+services:
+
+  react-native:
+    container_name: react-native
+    image: node:latest
+    tty: true
+    volumes:
+      - ./projects:/projects
+    working_dir: /projects
+    ports:
+      - 8081:8081
